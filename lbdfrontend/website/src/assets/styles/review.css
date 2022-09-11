@@ -1,0 +1,150 @@
+.mainContainer {
+  color: #99AABB;
+}
+
+.mainContainer .reviewContainer {
+  width: 900px;
+  margin: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1%;
+  border: 1px solid #15BC31;
+  border-radius: 4px;
+}
+
+.mainContainer .reviewContainer img {
+  width: 20%;
+  margin-right: 2%;
+}
+
+.mainContainer .reviewContainer .rating-score > .rating-score-item {
+  display: inline-block;
+}
+
+.mainContainer .reviewContainer .rating-score > .rating-score-item:after {
+  font-family: "FontAwesome";
+  font-size: 1em;
+  color: #99AABB;
+}
+
+.mainContainer .reviewContainer .rating-score[data-rating='1'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .reviewContainer .rating-score[data-rating='2'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .reviewContainer .rating-score[data-rating='3'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .reviewContainer .rating-score[data-rating='4'] > .rating-score-item:nth-child(-n + 4):after, .mainContainer .reviewContainer .rating-score[data-rating='5'] > .rating-score-item:nth-child(-n + 5):after, .mainContainer .reviewContainer .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(-n + 0):after, .mainContainer .reviewContainer .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .reviewContainer .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .reviewContainer .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .reviewContainer .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(-n + 4):after {
+  content: "\f005";
+}
+
+.mainContainer .reviewContainer .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(1):after, .mainContainer .reviewContainer .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(2):after, .mainContainer .reviewContainer .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(3):after, .mainContainer .reviewContainer .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(4):after, .mainContainer .reviewContainer .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(5):after {
+  content: "\f123";
+}
+
+.mainContainer .reviewContainer .rating-score > .rating-score-item:after {
+  content: "\f006";
+}
+
+.mainContainer .reviewContainer .rating-score {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer .reviewContainer .review-body {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-weight: 800;
+  margin-top: 20px;
+  width: 78%;
+}
+
+.mainContainer .comments {
+  width: 900px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.mainContainer .comments h1 {
+  text-align: center;
+}
+
+.mainContainer .comments .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  margin: 2% 0;
+  border-top: 1px solid #99AABB;
+}
+
+.mainContainer .comments .comment .left {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .comments .comment .left .fa-trash {
+  display: inline-block;
+}
+
+.mainContainer .comments .comment .left .fa-trash:hover {
+  color: #15BC31;
+  cursor: pointer;
+}
+
+.mainContainer .comments .comment .left img {
+  width: 30%;
+  margin-right: 5%;
+  border-radius: 50%;
+}
+
+.mainContainer .comments .comment .comment-body {
+  width: 80%;
+  word-wrap: break-word;
+  height: 100px;
+  padding: 2%;
+  outline: none;
+  padding: 1%;
+  border-radius: 4px;
+}
+
+.mainContainer .comments .add-comment textarea {
+  width: 50%;
+  height: 100%;
+  background-color: #99AABB;
+  border: none;
+  outline: none;
+  margin: auto;
+  display: block;
+  padding: 1%;
+}
+
+.mainContainer .comments button {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #15BC31;
+  display: block;
+  margin-left: auto;
+  font-weight: bold;
+  color: white;
+  padding: 2% 4%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=review.css.map */

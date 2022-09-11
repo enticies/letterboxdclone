@@ -1,0 +1,184 @@
+.mainContainer .films-container {
+  width: 95%;
+  margin: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.mainContainer .films-container .recent-movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 350px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainContainer .films-container .recent-movies h3 {
+  width: 100%;
+  border-bottom: 1px solid #99AABB;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.mainContainer .films-container .recent-movies .recent-movie {
+  width: 24%;
+  height: 100%;
+  border: 2px solid transparent;
+}
+
+.mainContainer .films-container .recent-movies .recent-movie:hover {
+  border: 2px solid #15BC31;
+  cursor: pointer;
+}
+
+.mainContainer .films-container .recent-movies .recent-movie img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainContainer .films-container .recent-reviews-films {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review {
+  width: 49%;
+  padding: 2% 1%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid #99AABB;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .review-movie-image {
+  width: 20%;
+  height: 100px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .review-movie-image:hover {
+  border: 2px solid #15BC31;
+  cursor: pointer;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body {
+  color: white;
+  padding: 0 3%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 90%;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner p {
+  cursor: pointer;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner p:hover {
+  color: #15BC31;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score > .rating-score-item, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input > label {
+  display: inline-block;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score > .rating-score-item:after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input > label:after {
+  font-family: "FontAwesome";
+  font-size: 1em;
+  color: #FFC600;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='1'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='2'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='3'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='4'] > .rating-score-item:nth-child(-n + 4):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='5'] > .rating-score-item:nth-child(-n + 5):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(-n + 0):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(-n + 4):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input > input:checked ~ label:after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input:hover > input + label:hover:after,
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input:hover > input + label:hover ~ input + label:after {
+  content: "\f005";
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(1):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(2):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(3):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(4):after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(5):after {
+  content: "\f123";
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score > .rating-score-item:after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input > label:after, .mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input:hover > input + label:after {
+  content: "\f006";
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-score {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input {
+  border: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-owner .rating-input > input {
+  display: none;
+}
+
+.mainContainer .films-container .recent-reviews-films .film-recent-review .film-review-body .film-review-text p {
+  width: 80%;
+}
+/*# sourceMappingURL=films.css.map */

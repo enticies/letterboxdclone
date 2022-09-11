@@ -1,0 +1,114 @@
+.container .list-container .new-list {
+  margin: 50px 0;
+}
+
+.container .list-container .add-film {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.container .list-container .add-film input {
+  width: 350px;
+  height: 40px;
+  border: none;
+  outline: none;
+  text-indent: 5%;
+  background-color: #2C3440;
+  color: #99AABB;
+  margin: 10px 0;
+}
+
+.container .list-container .add-film .found-movies {
+  height: 150px;
+  width: 350px;
+  background-color: #2C3440;
+  overflow-y: scroll;
+}
+
+.container .list-container .add-film .found-movies button {
+  width: 100%;
+  background-color: transparent;
+  padding: 3% 2%;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container .list-container .add-film .found-movies button:hover {
+  background-color: #15BC31;
+}
+
+.container .list-container form {
+  position: relative;
+  margin-top: 10px;
+}
+
+.container .list-container form input {
+  margin-top: 40px;
+  width: 350px;
+  height: 40px;
+  border: none;
+  outline: none;
+  text-indent: 5%;
+  background-color: #2C3440;
+  color: #99AABB;
+}
+
+.container .list-container form .save-list-button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #15BC31;
+  color: white;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.container .list-container .added-movies {
+  margin-top: 50px;
+  border: 1px solid #99AABB;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.container .list-container .added-movies .list-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.container .list-container .added-movies .list-movie img {
+  display: block;
+  width: 10%;
+  margin-right: 10%;
+  padding: 1%;
+}
+
+.container .list-container .added-movies .list-movie h1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container .list-container .added-movies .list-movie .delete-button {
+  width: 10%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.container .list-container .added-movies .list-movie .delete-button .fa-solid {
+  cursor: pointer;
+}
+/*# sourceMappingURL=newlist.css.map */

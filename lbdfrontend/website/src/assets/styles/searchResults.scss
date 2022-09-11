@@ -1,0 +1,102 @@
+$letterColor: #99AABB;
+$hoverColor: #15BC31;
+
+.mainContainer {
+    width: 1000px;
+    margin: auto;
+    header {
+        margin-bottom: 3%;
+    }
+
+    .redirect-page {
+        cursor: pointer;
+    }
+
+    .search-choice {
+        margin-left: 2%;
+        margin-bottom: 2%;
+        button {
+            background-color: $letterColor;
+            border: none;
+            outline: none;
+            padding: 1%;
+            color: white;
+            border-radius: 4px;
+            margin-right: 2%;
+
+        }
+    }
+
+    .found-movie {
+        margin-left: 2%;
+        width: 89.5%;
+        margin-right: auto;
+        padding: 30px 0;
+        border-top: 1px solid $letterColor;
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            border-radius: 4px;
+            height: 100px;
+            margin-left: 2%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid $hoverColor;
+            }
+        }
+
+        h1 {
+            color: #99AABB;
+            margin-left: 10%;
+            cursor: pointer;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+    .pagination-navigation {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        color: $letterColor;
+        margin-top: 10%;
+        align-items: center;
+        .page-link {
+            cursor: pointer;
+            display: block;
+            width: max-content;
+            height: max-content;
+            color: $letterColor;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .active-link {
+            color: white;
+        }
+        .prev-link, .next-link {
+            display: flex;
+            color: $letterColor;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 40px;
+            background-color: #303840;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .prev-link {
+            margin-right: 150px;
+        }
+        .next-link {
+            margin-left: 150px;
+        }
+
+    }
+
+
+    .containerClassName {
+        background-color: red;
+    }
+}

@@ -1,0 +1,191 @@
+.mainModal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mainModal .backgroundContainerLog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+  text-decoration: none;
+  background-color: black;
+}
+
+.mainModal .mainContainerLog {
+  z-index: 1000000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 450px;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #445566;
+  opacity: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainModal .mainContainerLog .left {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainModal .mainContainerLog .left img {
+  display: block;
+  margin-top: 19%;
+  height: 50%;
+}
+
+.mainModal .mainContainerLog .right {
+  width: 70%;
+  height: 100%;
+  /* Hide radio */
+  /* Order correctly by floating highest to the right */
+  /* The star of the show */
+  /* Half star trick */
+  /* Click + hover color */
+  /* color previous stars on hover */
+  /* Hover highlights */
+}
+
+.mainModal .mainContainerLog .right .movie-name {
+  font-size: 20px;
+  color: white;
+  margin: unset;
+  margin-bottom: 2%;
+}
+
+.mainModal .mainContainerLog .right .review {
+  width: 90%;
+  height: 50%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 2%;
+  font-size: 16px;
+  resize: none;
+}
+
+.mainModal .mainContainerLog .right .rate {
+  display: inline-block;
+  border: 0;
+}
+
+.mainModal .mainContainerLog .right .rate {
+  margin-top: 4%;
+  margin-left: 60%;
+}
+
+.mainModal .mainContainerLog .right .rate > input {
+  display: none;
+}
+
+.mainModal .mainContainerLog .right .rate > label {
+  float: right;
+}
+
+.mainModal .mainContainerLog .right .rate > label:before {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: .3rem .2rem;
+  margin: 0;
+  cursor: pointer;
+  font-family: FontAwesome;
+  content: "\f005 ";
+  /* full star */
+}
+
+.mainModal .mainContainerLog .right .rate .half:before {
+  content: "\f089 ";
+  /* half star no outline */
+  position: absolute;
+  padding-right: 0;
+}
+
+.mainModal .mainContainerLog .right input:checked ~ label,
+.mainModal .mainContainerLog .right label:hover, .mainModal .mainContainerLog .right label:hover ~ label {
+  color: #0db02b;
+}
+
+.mainModal .mainContainerLog .right input:checked + label:hover, .mainModal .mainContainerLog .right input:checked ~ label:hover,
+.mainModal .mainContainerLog .right input:checked ~ label:hover ~ label,
+.mainModal .mainContainerLog .right label:hover ~ input:checked ~ label {
+  color: #3cef5d;
+}
+
+.mainModal .mainContainerLog .modalCloseBtn {
+  display: block;
+  margin-left: auto;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding: 2% 3% 0% 3%;
+}
+
+.mainModal .mainContainerLog .modalTextInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.mainModal .mainContainerLog .modalTextInput input, .mainModal .mainContainerLog .modalTextInput label {
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.mainModal .mainContainerLog .modalTextInput label {
+  color: white;
+  padding-left: unset;
+}
+
+.mainModal .mainContainerLog .modalTextInput input {
+  background-color: #BBCCDD;
+}
+
+.mainModal .mainContainerLog .modalTextInput input:focus {
+  background-color: white;
+}
+
+.mainModal .mainContainerLog .saveBtn {
+  display: block;
+  background-color: #00A11D;
+  padding: 1%;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  width: 20%;
+  height: 6%;
+  font-size: 16px;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+  margin-left: 70%;
+}
+/*# sourceMappingURL=logMovieModal.css.map */

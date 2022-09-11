@@ -1,0 +1,28 @@
+footer {
+    width: 96%;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 20px;
+
+    p {
+        color: #55606B;
+        margin-left: 2%;
+
+        .icon {
+            color: #55606B;
+            margin: 0 1%;
+            font-size: 16px;
+
+            &:hover {
+                color: white;
+            }
+
+            cursor: pointer;
+        }
+
+        .fa-twitter {
+            margin-left: 20%;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.mainContainer .container .followers .follower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.mainContainer .container .followers .follower img {
+  height: 100%;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 10%;
+}
+/*# sourceMappingURL=userfollowers.css.map */

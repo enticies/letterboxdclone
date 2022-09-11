@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1D242B;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+body ul,
+body a {
+  text-decoration: none;
+  outline: none;
+}
+
+body a {
+  color: white;
+}
+
+.mainContainer .home-container {
+  width: 100%;
+  margin: auto;
+  margin-left: 1.8%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.mainContainer .home-container .recent-reviews {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainContainer .home-container .recent-reviews h1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card {
+  width: 20%;
+  border-radius: 4px;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card div {
+  position: relative;
+  width: 100%;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card div .review-by {
+  height: 10%;
+  width: 100%;
+  bottom: 10%;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card div .review-by span {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card div .review-by span:hover {
+  color: #15BC31;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card div img {
+  border-radius: 4px;
+  border: 2px solid transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 150px;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card div img:hover {
+  border: 2px solid #15BC31;
+  cursor: pointer;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card .rating-score > .rating-score-item {
+  display: inline-block;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card .rating-score > .rating-score-item:after {
+  font-family: "FontAwesome";
+  font-size: 1em;
+  color: #727F8C;
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='1'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='2'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='3'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='4'] > .rating-score-item:nth-child(-n + 4):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='5'] > .rating-score-item:nth-child(-n + 5):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(-n + 0):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(-n + 4):after {
+  content: "\f005";
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(1):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(2):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(3):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(4):after, .mainContainer .home-container .recent-reviews .home-review-card .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(5):after {
+  content: "\f123";
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card .rating-score > .rating-score-item:after {
+  content: "\f006";
+}
+
+.mainContainer .home-container .recent-reviews .home-review-card .rating-score {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer .home-container .latest-news {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.mainContainer .home-container .latest-news h3 {
+  border-bottom: 1px solid #727F8C;
+  margin-bottom: 20px;
+}
+
+.mainContainer .home-container .latest-news .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+}
+
+.mainContainer .home-container .latest-news .inner-container img {
+  width: 35%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainContainer .home-container .latest-news .inner-container .inner-text {
+  width: 65%;
+  padding: 0 5%;
+  height: 100%;
+  padding-bottom: 10%;
+}
+
+.mainContainer .home-container .latest-news .inner-container .inner-text p {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.mainContainer .home-container .latest-news .inner-container .inner-text h1 {
+  color: white;
+}
+
+.mainContainer .home-container .recent-lists {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContainer .home-container .recent-lists h3 {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #727F8C;
+}
+
+.mainContainer .home-container .recent-lists .recent-list {
+  width: 30%;
+}
+
+.mainContainer .home-container .recent-lists .recent-list h1 {
+  cursor: pointer;
+}
+
+.mainContainer .home-container .recent-lists .recent-list p span {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mainContainer .home-container .recent-news {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  margin-top: 130px;
+}
+
+.mainContainer .home-container .recent-news h3 {
+  width: 100%;
+  border-bottom: 1px solid #727F8C;
+  padding-bottom: 10px;
+}
+
+.mainContainer .home-container .recent-news .recent-news-single {
+  width: 30%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.mainContainer .home-container .recent-news .recent-news-single h1 {
+  cursor: pointer;
+}
+
+.mainContainer .home-container .recent-news .recent-news-single h1:hover {
+  color: white;
+}
+
+.mainContainer .home-container .recent-news .recent-news-single img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=home.css.map */

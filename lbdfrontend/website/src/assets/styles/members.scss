@@ -1,0 +1,80 @@
+$letterColor: #99AABB;
+$hoverColor: #15BC31;
+
+.mainContainer {
+    .members-container {
+        width: 95%;
+        margin: auto;
+        height: max-content;
+        .title-hero {
+            color: $letterColor;
+            font-weight: 300;
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $letterColor;
+        }
+
+        .recent-members {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5%;
+            .recent-member {
+                width: 18%;
+                img {
+                    width: 100%;
+                    height: 80%;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    text-align: center;
+                    color: white;
+                }
+
+                h6 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .members-members {
+            width: 100%;
+            height: max-content;  
+            .our-members {
+                padding-bottom: 20px;
+                margin-top: 50px;
+            }
+            .member {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px 0;
+                padding: 20px 0;
+                border-top: 1px solid $letterColor;
+                img {
+                    width: 10%;
+                    height: 70px;
+                    border-radius: 50%;
+                    border: 2px solid transparent;
+                    cursor: pointer;
+                    &:hover {
+                        border: 2px solid $hoverColor
+                    }
+                }
+
+                .member-body {
+                    width: 90%;
+                    text-align: center;
+                    h1 {
+                        &:hover {
+                            color: $hoverColor;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

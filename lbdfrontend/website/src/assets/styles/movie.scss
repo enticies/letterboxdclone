@@ -1,0 +1,315 @@
+$letterColor: #99AABB;
+$hoverColor: #15BC31;
+$star-size: 60px;
+$star-color: #fff;
+$star-background: #fc0;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    .movie-page-wrapper {
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+
+        .deactive-genre {
+            cursor: unset !important;
+            &:hover {
+                color: unset !important;
+            }
+        }
+
+        .movie-poster {
+            position: sticky;
+            top: 100px;
+            display: block;
+            height: 250px;
+            border-radius: 7px;
+            width: 20%;
+        }
+
+        .inner-page-wrapper {
+            width: 80%;
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            margin-left: auto;
+            height: max-content;
+
+            .descriptionandbox {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                height: max-content;
+
+                .description {
+                    width: 70%;
+                    padding: 0 5%;
+                    color: $letterColor;
+
+                    h3 {
+                        margin-left: 5%;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        width: 70%;
+                        font-size: 14px;
+                        margin-left: 5%;
+                        margin-top: 5%;
+                    }
+                }
+
+                .box {
+                    width: 30%;
+                    height: 100px;
+                    border-radius: 4px;
+                    background-color: #445566;
+                }
+            }
+
+            .movie-page-container {
+                width: 90%;
+                height: max-content;
+                background-color: transparent;
+                margin: auto;
+                margin-bottom: 50%;
+
+                .tab-list {
+                    height: 50px;
+                    display: flex;
+                    list-style: none;
+                    font-size: 18px;
+                    padding: 0;
+                    margin: 0;
+                    background-color: transparent;
+                }
+
+                .tabs {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: transparent;
+                    position: relative;
+                    color: $hoverColor;
+                    cursor: pointer;
+                }
+
+                .tabs:not(:last-child) {
+                    border-right: 2px solid rgba(0, 0, 0, 0.3);
+                }
+
+                .active-tabs {
+                    background: transparent;
+                    color: $hoverColor;
+                    font-weight: bold;
+                    border-bottom: 1px solid white;
+                }
+
+                .active-tabs::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: -4px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: calc(100% + 2px);
+                    height: 4px;
+                }
+
+                .content {
+                    background-color: transparent;
+                    display: none;
+                    padding: 10px;
+                    color: white;
+
+                    a {
+                        background-color: #14181C;
+                        display: block;
+                        color: $letterColor;
+                        border-radius: 4px;
+                        padding: 1% 2%;
+                        font-size: 13px;
+                        margin: 1%;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $hoverColor;
+                        }
+                    }
+                }
+
+                .active-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+            }
+
+            .reviews {
+                width: 100%;
+                height: max-content;
+                margin-top: 15%;
+                color: $letterColor;
+
+                .review-header {
+                    margin-left: 2%;
+                    margin-bottom: 4%;
+                }
+
+                .review {
+                    height: max-content;
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+
+                    .review-user {
+                        height: 50px;
+                        display: flex;
+
+                        img {
+                            width: 10%;
+                            margin-right: 7.5%;
+                            margin-left: 2%;
+                            border-radius: 50%;
+                        }
+
+                        .comments {
+                            margin-right: 10%;
+                            .fa-comment {
+                                cursor: pointer;
+                            }
+                        }
+
+                        p {
+                            width: 50%;
+
+                            span {
+                                font-weight: 900;
+
+                                &:hover {
+                                    color: $hoverColor;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        %base-star {
+                            display: inline-block;
+
+                            &:after {
+                                font-family: "FontAwesome";
+                                font-size: 1em;
+                                color: #FFC600;
+                            }
+                        }
+
+                        ;
+
+                        %full-star {
+                            &:after {
+                                content: "\f005";
+                            }
+                        }
+
+                        ;
+
+                        %half-star {
+                            &:after {
+                                content: "\f123";
+                            }
+                        }
+
+                        ;
+
+                        %empty-star {
+                            &:after {
+                                content: "\f006";
+                            }
+                        }
+
+                        ;
+
+                        // 5 Star Rating Score
+                        .rating-score {
+                            display: inline-flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            margin: 0;
+                            padding: 0;
+
+                            >.rating-score-item {
+                                @extend %base-star;
+                                @extend %empty-star;
+                            }
+
+                            @for $i from 1 through 5 {
+                                &[data-rating='#{$i}'] {
+                                    >.rating-score-item:nth-child(-n + #{$i}) {
+                                        @extend %full-star;
+                                    }
+                                }
+                            }
+
+                            @for $i from 0 through 4 {
+                                &[data-rating='#{$i + 0.5}'] {
+                                    >.rating-score-item:nth-child(-n + #{$i}) {
+                                        @extend %full-star;
+                                    }
+
+                                    >.rating-score-item:nth-child(#{$i + 1}) {
+                                        @extend %half-star;
+                                    }
+                                }
+                            }
+                        }
+
+                        // 5 Star Rating Form Field
+                        .rating-input {
+                            border: none;
+                            display: inline-flex;
+                            flex-direction: row-reverse;
+                            justify-content: flex-end;
+                            margin: 0;
+                            padding: 0;
+
+                            >input {
+                                display: none;
+                            }
+
+                            >label {
+                                @extend %base-star;
+                                @extend %empty-star;
+                            }
+
+                            // Selected star color
+                            >input:checked~label {
+                                @extend %full-star;
+                            }
+
+                            // On hover color all stars grey by default
+                            &:hover>input+label {
+                                @extend %empty-star;
+                            }
+
+                            // Hover star color
+                            &:hover>input+label:hover,
+                            &:hover>input+label:hover~input+label {
+                                @extend %full-star;
+                            }
+                        }
+                    }
+
+                    .review-body {
+                        margin-left: 19.7%;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+$letterColor: #99AABB;
+$hoverColor: #15BC31;
+
+.mainContainer {
+    .settings-container {
+        width: 97%;
+        margin: auto;
+
+        .save-image {
+            .save-image-button {
+                margin-top: 10%;
+                width: 100%;
+                height: 40px;
+                border: none;
+                outline: none;
+                border: 4px;
+                color: white;
+                cursor: pointer;
+                background-color: $hoverColor;
+
+            }
+        }
+
+        .change-credentials {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            input {
+                width: 100%;
+                margin: 2% 0;
+                padding: 2%;
+                border: none;
+                background-color: #2C3440;
+                outline: none;
+                border-radius: 4px;
+                color: white;
+            }
+
+            label {
+                margin-top: 20px;
+            }
+        }
+
+        .tab-list {
+            height: 50px;
+            display: flex;
+            list-style: none;
+            font-size: 18px;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            margin-top: 30px;
+        }
+
+        .tabs {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            position: relative;
+            color: $hoverColor;
+            cursor: pointer;
+        }
+
+        .tabs:not(:last-child) {
+            border-right: 2px solid rgba(0, 0, 0, 0.3);
+        }
+
+        .active-tabs {
+            background: transparent;
+            color: $hoverColor;
+            font-weight: bold;
+            border-bottom: 1px solid white;
+        }
+
+        .active-tabs::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% + 2px);
+            height: 4px;
+        }
+
+        .content {
+            background-color: transparent;
+            display: none;
+            padding: 10px;
+            color: white;
+            $primary-color: #101010;
+            $white: #fff;
+
+            .Drag {
+                align-items: center;
+                border: 1px solid white;
+                border-radius: 5px;
+                display: flex;
+                height: 200px;
+                justify-content: center;
+                width: 200px;
+                margin: auto;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+
+
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                width: 100%;
+                height: 50px;
+                font-size: 15px;
+                font-weight: bold;
+                color: $white;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                text-decoration: none;
+                background-color: $primary-color;
+                border: 0;
+                cursor: pointer;
+            }
+
+
+            a {
+                background-color: #14181C;
+                display: block;
+                color: $letterColor;
+                border-radius: 4px;
+                padding: 1% 2%;
+                font-size: 13px;
+                margin: 1%;
+                cursor: pointer;
+
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+        }
+
+        .save {
+            width: 80px;
+            height: 30px;
+            color: white;
+            background-color: $hoverColor;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .active-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.container {
+  width: 950px;
+  height: 600px;
+  margin: auto;
+}
+
+.container .tabs {
+  height: 10%;
+  width: 100%;
+  background-color: #2C3440;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .tabs .tab {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5%;
+}
+
+.container .films {
+  height: 100%;
+  width: 100%;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .films .film-card {
+  width: 20%;
+  border-radius: 4px;
+  margin-top: 5%;
+}
+
+.container .films .film-card img {
+  border-radius: 4px;
+  border: 2px solid transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 150px;
+}
+
+.container .films .film-card img:hover {
+  border: 2px solid #15BC31;
+  cursor: pointer;
+}
+
+.container .films .film-card .rating-score > .rating-score-item {
+  display: inline-block;
+}
+
+.container .films .film-card .rating-score > .rating-score-item:after {
+  font-family: "FontAwesome";
+  font-size: 1em;
+  color: #99AABB;
+}
+
+.container .films .film-card .rating-score[data-rating='1'] > .rating-score-item:nth-child(-n + 1):after, .container .films .film-card .rating-score[data-rating='2'] > .rating-score-item:nth-child(-n + 2):after, .container .films .film-card .rating-score[data-rating='3'] > .rating-score-item:nth-child(-n + 3):after, .container .films .film-card .rating-score[data-rating='4'] > .rating-score-item:nth-child(-n + 4):after, .container .films .film-card .rating-score[data-rating='5'] > .rating-score-item:nth-child(-n + 5):after, .container .films .film-card .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(-n + 0):after, .container .films .film-card .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(-n + 1):after, .container .films .film-card .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(-n + 2):after, .container .films .film-card .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(-n + 3):after, .container .films .film-card .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(-n + 4):after {
+  content: "\f005";
+}
+
+.container .films .film-card .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(1):after, .container .films .film-card .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(2):after, .container .films .film-card .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(3):after, .container .films .film-card .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(4):after, .container .films .film-card .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(5):after {
+  content: "\f123";
+}
+
+.container .films .film-card .rating-score > .rating-score-item:after {
+  content: "\f006";
+}
+
+.container .films .film-card .rating-score {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=userfilms.css.map */

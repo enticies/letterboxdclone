@@ -1,0 +1,33 @@
+.container .list-container .added-movies {
+  margin-top: 50px;
+  border: 1px solid #99AABB;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.container .list-container .added-movies .list-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.container .list-container .added-movies .list-movie img {
+  display: block;
+  width: 10%;
+  margin-right: 10%;
+  padding: 1%;
+}
+
+.container .list-container .added-movies .list-movie h1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=list.css.map */

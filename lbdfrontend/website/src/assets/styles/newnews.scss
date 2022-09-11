@@ -1,0 +1,39 @@
+.mainContainer {
+    .container {
+        input, label, textarea {
+            width: 50%;
+            display: block;
+        }
+        label {
+            margin-top: 50px;
+        }
+
+        input, textarea {
+            background-color: #2C3440;
+            padding: 1%;
+            color: white;
+            border: none;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        textarea {
+            max-height: 50%;
+            max-width: 100%;
+        }
+
+        .save-news-button {
+            width: 80px;
+            height: 40px;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            background-color: #15BC31;
+            border: none;
+            outline: none;
+
+        }
+
+    }
+}

@@ -1,0 +1,176 @@
+$letterColor: #99AABB;
+$hoverColor: #15BC31;
+
+
+.mainContainer {
+    color: $letterColor;
+
+    .reviewContainer {
+        width: 900px;
+        margin: auto;
+        height: max-content;
+        display: flex;
+        img {
+            width: 20%;
+            margin-right: 2%;
+        }
+
+        // 5 Star Rating Score
+        %base-star {
+            display: inline-block;
+
+            &:after {
+                font-family: "FontAwesome";
+                font-size: 1em;
+                color: $letterColor;
+            }
+        }
+
+        ;
+
+        %full-star {
+            &:after {
+                content: "\f005";
+            }
+        }
+
+        ;
+
+        %half-star {
+            &:after {
+                content: "\f123";
+            }
+        }
+
+        ;
+
+        %empty-star {
+            &:after {
+                content: "\f006";
+            }
+        }
+
+        .rating-score {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+
+            >.rating-score-item {
+                @extend %base-star;
+                @extend %empty-star;
+            }
+
+            @for $i from 1 through 5 {
+                &[data-rating='#{$i}'] {
+                    >.rating-score-item:nth-child(-n + #{$i}) {
+                        @extend %full-star;
+                    }
+                }
+            }
+
+            @for $i from 0 through 4 {
+                &[data-rating='#{$i + 0.5}'] {
+                    >.rating-score-item:nth-child(-n + #{$i}) {
+                        @extend %full-star;
+                    }
+
+                    >.rating-score-item:nth-child(#{$i + 1}) {
+                        @extend %half-star;
+                    }
+                }
+            }
+        }
+
+        .review-body {
+            height: max-content;
+            font-weight: 800;
+            margin-top: 20px;
+            width: 78%;
+        }
+
+
+        padding: 1%;
+        border: 1px solid $hoverColor;
+        border-radius: 4px;
+    }
+
+    .comments {
+        width: 900px;
+        margin: auto;
+        margin-top: 150px;
+
+        h1 {
+            text-align: center;
+        }
+
+        .comment {
+            display: flex;
+            height: 100px;
+            width: 100%;
+            margin: 2% 0;
+            border-top: 1px solid $letterColor;
+
+            .left {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .fa-trash {
+                    display: inline-block;
+
+                    &:hover {
+                        color: $hoverColor;
+                        cursor: pointer;
+                    }
+                }
+
+                img {
+                    width: 30%;
+                    margin-right: 5%;
+                    border-radius: 50%;
+                }
+            }
+
+            .comment-body {
+                width: 80%;
+                word-wrap: break-word;
+                height: 100px;
+                padding: 2%;
+                outline: none;
+                padding: 1%;
+                border-radius: 4px;
+            }
+        }
+
+        .add-comment {
+            textarea {
+                width: 50%;
+                height: 100%;
+                background-color: $letterColor;
+                border: none;
+                outline: none;
+                margin: auto;
+                display: block;
+                padding: 1%;
+            }
+        }
+
+        button {
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background-color: #15BC31;
+            display: block;
+            margin-left: auto;
+            font-weight: bold;
+            color: white;
+            padding: 2% 4%;
+            cursor: pointer;
+        }
+
+    }
+}

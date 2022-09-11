@@ -1,0 +1,161 @@
+$errorColor: #fc8e2f;
+
+.mainModal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+    .backgroundContainerLog {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 80%;
+        text-decoration: none;
+        background-color: black;
+    }
+    .mainContainerLog {
+        z-index: 1000000;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        height: 450px;
+        border-radius: 5px;
+        transform: translate(-50%, -50%);
+        background-color: #445566;
+        opacity: 100%;
+        display: flex;
+        .left {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            img {
+                display: block;
+                margin-top: 19%;
+                height: 50%;
+            }
+        }
+        .right {
+            width: 70%;
+            height: 100%;
+            .movie-name {
+                font-size: 20px;
+                color: white;
+                margin: unset;
+                margin-bottom: 2%;
+            }
+            .review {
+                width: 90%;
+                height: 50%;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+                padding: 2%;
+                font-size: 16px;
+                resize: none;
+            }
+            .rate {
+            display: inline-block;
+            border: 0;
+            }
+            /* Hide radio */
+            .rate {
+                margin-top: 4%;
+                margin-left: 60%;
+            }
+            .rate > input {
+                display: none;
+            }
+            /* Order correctly by floating highest to the right */
+            .rate > label {
+                float: right;
+            }
+            /* The star of the show */
+            .rate > label:before {
+                display: inline-block;
+                font-size: 1.5rem;
+                padding: .3rem .2rem;
+                margin: 0;
+                cursor: pointer;
+                font-family: FontAwesome;
+                content: "\f005 "; /* full star */
+            }
+
+            /* Half star trick */
+            .rate .half:before {
+                content: "\f089 "; /* half star no outline */
+                position: absolute;
+                padding-right: 0;
+            }
+            /* Click + hover color */
+            input:checked ~ label, /* color current and previous stars on checked */
+            label:hover, label:hover ~ label { color: #0db02b;  } /* color previous stars on hover */
+
+            /* Hover highlights */
+            input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+            input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+            label:hover ~ input:checked ~ label /* highlight previous selected stars */ { color: #3cef5d;  } 
+            }
+        .modalCloseBtn {
+            display: block;
+            margin-left: auto;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+            padding: 2% 3% 0% 3%;
+        }
+
+        .modalTextInput {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            input, label {
+                width: 90%;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+            }
+            label {
+                color: white;
+                padding-left: unset;
+            }
+
+            input {
+                background-color: #BBCCDD;
+                &:focus {
+                    background-color: white;
+                }
+            }
+        }
+  
+ 
+
+        .saveBtn {
+            display: block;
+            background-color: #00A11D;
+            padding: 1%;
+            color: white;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            width: 20%;
+            height: 6%;
+            font-size: 16px;
+            border-radius: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: auto;
+            margin-left: 70%;
+
+        }
+    }
+
+}    

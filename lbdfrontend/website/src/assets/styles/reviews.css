@@ -1,0 +1,42 @@
+.container .reviews {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 50px;
+}
+
+.container .reviews .review-card-small {
+  cursor: pointer;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+  position: relative;
+}
+
+.container .reviews .review-card-small .delete-news-button {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  padding: 1%;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container .reviews .review-card-small .delete-news-button:hover {
+  color: red;
+}
+
+.container .reviews .review-card-small img {
+  width: 7%;
+  height: 70%;
+}
+
+.container .reviews .review-card-small div {
+  margin-left: 5%;
+}
+/*# sourceMappingURL=reviews.css.map */

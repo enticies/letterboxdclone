@@ -1,0 +1,61 @@
+$letterColor: #99AABB;
+$hoverColor: #15BC31;
+
+
+.mainContainer {
+    .people-container {
+        height: max-content;
+        display: flex;
+
+        .person-hero-title {
+            margin: 0;
+            color: $letterColor;
+            font-weight: 300;
+            height: max-content;
+            width: 100%;
+            span {
+                color: white;
+                font-weight: 600;
+            }
+        }
+
+        .person-movies {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            min-height: 500px;
+            .person-movie {
+                width: 30%;
+                margin-top: 5%;
+                border: 2px solid transparent;
+                &:hover {
+                    border: 2px solid $hoverColor;
+                    cursor: pointer;
+                }
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 4px;
+                }
+                margin-right: 2%;
+            }
+        }
+        .person-info {
+            width: 20%;
+            height: 100%;
+            img {
+                width: 100%;
+                display: block;
+                margin: auto;
+                border-radius: 4px;
+            }
+
+            p {
+                width: 100%;
+                margin-top: 5%;
+            }
+        }
+    }
+}

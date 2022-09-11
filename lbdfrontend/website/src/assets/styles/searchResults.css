@@ -1,0 +1,128 @@
+.mainContainer {
+  width: 1000px;
+  margin: auto;
+}
+
+.mainContainer header {
+  margin-bottom: 3%;
+}
+
+.mainContainer .redirect-page {
+  cursor: pointer;
+}
+
+.mainContainer .search-choice {
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.mainContainer .search-choice button {
+  background-color: #99AABB;
+  border: none;
+  outline: none;
+  padding: 1%;
+  color: white;
+  border-radius: 4px;
+  margin-right: 2%;
+}
+
+.mainContainer .found-movie {
+  margin-left: 2%;
+  width: 89.5%;
+  margin-right: auto;
+  padding: 30px 0;
+  border-top: 1px solid #99AABB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .found-movie img {
+  display: block;
+  border-radius: 4px;
+  height: 100px;
+  margin-left: 2%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.mainContainer .found-movie img:hover {
+  border: 2px solid #15BC31;
+}
+
+.mainContainer .found-movie h1 {
+  color: #99AABB;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.mainContainer .found-movie h1:hover {
+  color: #15BC31;
+}
+
+.mainContainer .pagination-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  color: #99AABB;
+  margin-top: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .pagination-navigation .page-link {
+  cursor: pointer;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #99AABB;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mainContainer .pagination-navigation .active-link {
+  color: white;
+}
+
+.mainContainer .pagination-navigation .prev-link, .mainContainer .pagination-navigation .next-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #99AABB;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 40px;
+  background-color: #303840;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mainContainer .pagination-navigation .prev-link {
+  margin-right: 150px;
+}
+
+.mainContainer .pagination-navigation .next-link {
+  margin-left: 150px;
+}
+
+.mainContainer .containerClassName {
+  background-color: red;
+}
+/*# sourceMappingURL=searchResults.css.map */

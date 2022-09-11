@@ -1,0 +1,23 @@
+.mainContainer .article {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 95%;
+  margin: auto;
+}
+
+.mainContainer .article img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 5% 0;
+}
+
+.mainContainer .article .author {
+  color: white;
+  margin-top: 10%;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*# sourceMappingURL=news.css.map */

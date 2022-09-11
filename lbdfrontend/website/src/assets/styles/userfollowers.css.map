@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAGgB,cAHF,CACV,UAAU,CACN,UAAU,CACF,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,UAAU;EAC3B,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,OAAO;CAOlB;;AAfjB,AASoB,cATN,CACV,UAAU,CACN,UAAU,CACF,SAAS,CAML,GAAG,CAAC;EACA,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,GAAG;EAClB,YAAY,EAAE,GAAG;CACpB",
+    "sources": [
+        "userfollowers.scss"
+    ],
+    "names": [],
+    "file": "userfollowers.css"
+}

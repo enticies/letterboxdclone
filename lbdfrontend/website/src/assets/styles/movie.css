@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer .movie-page-wrapper {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+.mainContainer .movie-page-wrapper .deactive-genre {
+  cursor: unset !important;
+}
+
+.mainContainer .movie-page-wrapper .deactive-genre:hover {
+  color: unset !important;
+}
+
+.mainContainer .movie-page-wrapper .movie-poster {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  display: block;
+  height: 250px;
+  border-radius: 7px;
+  width: 20%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .descriptionandbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .descriptionandbox .description {
+  width: 70%;
+  padding: 0 5%;
+  color: #99AABB;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .descriptionandbox .description h3 {
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .descriptionandbox .description p {
+  width: 70%;
+  font-size: 14px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .descriptionandbox .box {
+  width: 30%;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #445566;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container {
+  width: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: transparent;
+  margin: auto;
+  margin-bottom: 50%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .tab-list {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .tabs {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  position: relative;
+  color: #15BC31;
+  cursor: pointer;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .tabs:not(:last-child) {
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .active-tabs {
+  background: transparent;
+  color: #15BC31;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 4px;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .content {
+  background-color: transparent;
+  display: none;
+  padding: 10px;
+  color: white;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .content a {
+  background-color: #14181C;
+  display: block;
+  color: #99AABB;
+  border-radius: 4px;
+  padding: 1% 2%;
+  font-size: 13px;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .content a:hover {
+  color: #15BC31;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .movie-page-container .active-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 15%;
+  color: #99AABB;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review-header {
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user img {
+  width: 10%;
+  margin-right: 7.5%;
+  margin-left: 2%;
+  border-radius: 50%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .comments {
+  margin-right: 10%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .comments .fa-comment {
+  cursor: pointer;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user p {
+  width: 50%;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user p span {
+  font-weight: 900;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user p span:hover {
+  color: #15BC31;
+  cursor: pointer;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score > .rating-score-item, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input > label {
+  display: inline-block;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score > .rating-score-item:after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input > label:after {
+  font-family: "FontAwesome";
+  font-size: 1em;
+  color: #FFC600;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='1'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='2'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='3'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='4'] > .rating-score-item:nth-child(-n + 4):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='5'] > .rating-score-item:nth-child(-n + 5):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(-n + 0):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(-n + 1):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(-n + 2):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(-n + 3):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(-n + 4):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input > input:checked ~ label:after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input:hover > input + label:hover:after,
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input:hover > input + label:hover ~ input + label:after {
+  content: "\f005";
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='0.5'] > .rating-score-item:nth-child(1):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='1.5'] > .rating-score-item:nth-child(2):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='2.5'] > .rating-score-item:nth-child(3):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='3.5'] > .rating-score-item:nth-child(4):after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score[data-rating='4.5'] > .rating-score-item:nth-child(5):after {
+  content: "\f123";
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score > .rating-score-item:after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input > label:after, .mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input:hover > input + label:after {
+  content: "\f006";
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-score {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input {
+  border: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-user .rating-input > input {
+  display: none;
+}
+
+.mainContainer .movie-page-wrapper .inner-page-wrapper .reviews .review .review-body {
+  margin-left: 19.7%;
+}
+/*# sourceMappingURL=movie.css.map */

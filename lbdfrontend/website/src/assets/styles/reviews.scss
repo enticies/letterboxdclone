@@ -1,0 +1,41 @@
+$letterColor: #99AABB;
+$hoverColor: #15BC31;
+
+.container {
+    .reviews {
+        width: 100%;
+        height: max-content;
+        margin-top: 50px;
+
+        .review-card-small {
+            cursor: pointer;
+            height: 30%;
+            display: flex;
+            margin-top: 5%;
+            position: relative;
+
+            .delete-news-button {
+                position: absolute;
+                right: 0;
+                background-color: transparent;
+                padding: 1%;
+                color: white;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                &:hover {
+                    color: red;
+                }
+            }
+
+            img {
+                width: 7%;
+                height: 70%;
+            }
+
+            div {
+                margin-left: 5%;
+            }
+        }
+    }
+}
